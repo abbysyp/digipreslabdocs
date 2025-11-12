@@ -10,6 +10,7 @@ _These instructions are adapted for the Windows machine (Yoda) in the Digital Pr
    
 4. For each physical drive, create an empty folder and name it the corresponding drive’s barcode.
 5. Within the top-level barcode folder, create two additional folders called **carved_files** and **transfer_metadata**.
+6. Continue to **Write Blocker Setup**.
 
 ## 🚫 Write Blocker Setup
 
@@ -20,7 +21,7 @@ _These instructions are adapted for the Tableau Forensic USB 3.0 Bridge._
 3. Connect the write blocker via USB to the computer.
 4. Connect the power supply cord to the write blocker, then plug it into an outlet. Confirm that the **DC IN** light turns green.
 5. Turn on the write blocker by pressing the power button once. The **Power**, **Host**, **Device**, and **Write Block** lights should turn green and the write blocker screen should indicate that it recognizes the device. The Activity light may blink red, which is OK.
-7. Continue to [Virus Scan](https://github.com/abbysyp/digipreslabdocs/new/main#virus-scan).
+7. Continue to **Virus Scan**.
   
 ## 🦠 Virus Scan
 
@@ -32,7 +33,7 @@ _These instructions are adapted to use Falcon Crowdstrike Virus Scanning Softwar
 4. _Underneath_ the button that says Quick scan, select **Scan options**.
 5. Select **Custom scan**, then choose the directory in File Explorer where the USB or hard drive files can be found.
 6. Run the scan, then scroll back to **Scan options** at the top - you should see the results of the virus scan.
-7. If all looks clear, continue to [File Transfer](https://github.com/abbysyp/digipreslabdocs/new/main#-file-transfer).
+7. If all looks clear, continue to **File Transfer**.
 
 ## 🔁 File Transfer
 
