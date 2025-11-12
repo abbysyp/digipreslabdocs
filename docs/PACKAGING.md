@@ -16,7 +16,7 @@ _These instructions are adapted for the Windows Terminal syntax._
     + `tree` is a built in Windows tool that displays a directory’s structure
     + `/A` indicates that we want the output in a human-readable format
     + `/f` indicates that we want to include filenames for each folder/sub-folder
-    + `>` filename pushes the output to a new file that we’re calling tree.txt
+    + `> filename` pushes the output to a new file that we’re calling tree.txt
 
     If there are non-Roman characters in the filenames, just enter `tree /A /f`, which will print the output to the terminal. Copy and paste this directly into a new plaintext document. Name it **tree.txt** then save it in  **transfer_metadata**.
 6. Continue to [Generate Brunnhilde Reports](https://github.com/abbysyp/digipreslabdocs/new/main/docs#-generate-brunnhilde-reports).
