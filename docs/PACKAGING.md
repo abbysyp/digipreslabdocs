@@ -19,7 +19,7 @@ _These instructions are adapted for the Windows Terminal syntax._
     + `> filename` pushes the output to a new file that we’re calling tree.txt
 
     If there are non-Roman characters in the filenames, just enter `tree /A /f`, which will print the output to the terminal. Copy and paste this directly into a new plaintext document. Name it **tree.txt** then save it in  **transfer_metadata**.
-6. Continue to [Generate Brunnhilde Reports](https://github.com/abbysyp/digipreslabdocs/new/main/docs#-generate-brunnhilde-reports).
+6. Continue to **Generate Brunnhilde Reports**.
 
 ## 📋 Generate Brunnhilde Reports
 
@@ -44,7 +44,7 @@ _**If you see something in a disk’s files that looks suspicious and might viol
     + `[path to transfer_metadata]\brunnhilde_reports` is where the reports will go
 2. In **brunnhilde_reports**, open and inspect the **report.html** file in a browser.
 3. If anything looks out of the ordinary, please talk to your supervisor so that a decision can be made about whether or not to keep/further inspect the files.
-4. Continue to [Metadata Form](https://github.com/abbysyp/digipreslabdocs/new/main/docs#%EF%B8%8F-metadata-form).
+4. Continue to **Metadata Form**.
 
 ## 📝 Metadata Form
 
@@ -68,7 +68,7 @@ _These instructions are adapted for the Windows machine (Yoda) in the Digital Pr
 6. For each bag, fill in any relevant fields (if a field is N/A, just leave it blank).
 7. When all fields are filled out, click **Submit**. If prompted, select **barcode → transfer_metdata** as the destination folder - otherwise, manually move the file from Downloads to the corresponding transfer_metadata folder.
 8. When done using the metadata form, type `Ctrl^C` in the terminal to close the server. You’ll be prompted by the terminal, enter `Y` then hit **Enter**.
-9. Continue to [BagIt and Checksum Validation](https://github.com/abbysyp/digipreslabdocs/new/main/docs#-bagit-and-checksum-validation).
+9. Continue to **BagIt and Checksum Validation**.
 
 ## ✅ BagIt and Checksum Validation
 
@@ -82,7 +82,7 @@ _These instructions are adapted for the Windows machine (Yoda) in the Digital Pr
    * Floppy Disk
    * [USB or Hard Drive](https://github.com/abbysyp/digipreslabdocs/blob/main/docs/USB.md#usb-or-external-hard-drive)
    * Cloud
-6. Otherwise, continue to [Transfer to Archivematica](https://github.com/abbysyp/digipreslabdocs/new/main/docs#-transfer-to-archivematica).
+6. Otherwise, continue to **Transfer to Archivematica**.
 
 ## 🏁 Transfer to Archivematica
 
