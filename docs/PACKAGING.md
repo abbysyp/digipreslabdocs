@@ -80,7 +80,7 @@ _These instructions are adapted for the Windows machine (Yoda) in the Digital Pr
 
 4. If a **failed_checksums.txt** file was generated, investigate the results and restart from the corresponding workflow:
    * Floppy Disk
-   * USB or Hard Drive
+   * [USB or Hard Drive](https://github.com/abbysyp/digipreslabdocs/blob/main/docs/USB.md#usb-or-external-hard-drive)
    * Cloud
 6. Otherwise, continue to [Transfer to Archivematica](https://github.com/abbysyp/digipreslabdocs/new/main/docs#-transfer-to-archivematica).
 
