@@ -1,19 +1,21 @@
-# Internal Documentation Example
+# U-M Digital Preservation Laboratory Workflows
 
-This is an example repo that can be copied into the `/docs` folder of your codebase. It follows [the Diátaxis method](https://diataxis.fr/) of technical documentation management. Here are some useful sections to keep in the README of your project.
+Establishing workflows for transferring material from obsolete media or the cloud represent a core function of our work. Workflows for working with media such as floppy disks and optical discs like CD-ROMs are included here for your use and adaptation. These include steps to create forensic images or file transfers that maintain the bit integrity of the material. The resulting packages constitute "Submission Information Packages," ready for deposit in the library's preservation systems.
 
-## Introduction
+## Working with students
 
-An introduction to the area of the organization that this project lives in and the context around why this project was designed.
+Our lab is a space for both teaching and production, and provides a place for students to gain experience in digital preservation practice. Our workflows are designed and maintained through the research and testing of graduate student employees, and can accommodate production-level outputs with the assumption that graduate employees and interns will handle a fair amount of the work.
 
-## Getting Started
+## Software and tools used in the workflows include:
 
-How to get this repo up and running.
+Software and tools used in the workflows include:
 
-### I'm a developer working on this project, where do I start?
+  + Forensic Toolkit (FTK) Imager
+  + Brunnhilde on Windows
+  + Software included with Device Side Data’s FC5025
 
-Instructions for a developer that may be making changes to this repository.
+Additional tools will be implemented as we extend our workflows to include archival processing and additional preservation actions, such as file normalization.
 
-### I'm a consumer of this project, where do I start?
+## Disclaimer
 
-Instructions for someone that may be using the production version of this project.
+These workflows are shared as-is and may include some internal terminology. Feel free to contact us at digitalpreservation@umich.edu for clarifications or questions. Also, we are still learning the intricacies of preserving this type of content, and workflows will likely change as we adjust our methods.
