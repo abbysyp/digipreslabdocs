@@ -55,7 +55,7 @@ _These instructions are adapted to use Falcon Crowdstrike Virus Scanning Softwar
    ![Add Evidence Item option highlighted in FTK.](../workflow-images/ftk_add_evidence_item.png)
 4. Select your **Physical Drive** then click **Finish**.
 
-   ![Example of Kingston USB selected from Physical Drive dropdown menu in FTK.](../workflow-images/physcial_drive_in_ftk.png)
+   ![Example of Kingston USB selected from Physical Drive dropdown menu in FTK.](../workflow-images/ftk_physical_drive.jpeg)
 6. Under **Evidence Tree**, click on **+** to expand the directories until you see **[root]** or **[HTE]** and click on it.
 
    ![FTK expanded evidence tree.](../workflow-images/ftk_expanded_evidence_tree.png)
