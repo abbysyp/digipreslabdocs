@@ -70,7 +70,7 @@ _These instructions are adapted for the Windows machine (Yoda) in the Digital Pr
 
 1. Open up the **Desktop → ExpressProjects → Metdata_Form** folder in VS Code.
 2. In VS Code, open up the terminal by clicking **View → Terminal** in the top navigation bar.
-3. In the terminal, type the following commands in order:
+3. In the terminal, enter the following commands in order:
 
     ```
     npm install
