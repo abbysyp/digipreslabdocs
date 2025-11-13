@@ -10,7 +10,7 @@ _These instructions are adapted for the Windows machine (Yoda) in the Digital Pr
 
    The black cable in the 1G port connects to the NAS, and the gray cable in the 10G port connects to Network 0.
 
-   ![Network cables on the back of Yoda shown plugged in.](../workflow-images/network_cables.jpeg)
+   <img src="../workflow-images/network_cables.JPG" alt="Network cables on the back of Yoda shown plugged in." width="650">
    
 4. For each physical drive, create an empty folder and name it the corresponding drive’s barcode.
 6. Within the top-level barcode folder, create two additional folders called **carved_files** and **transfer_metadata**.
@@ -28,7 +28,7 @@ _These instructions are adapted for the Tableau Forensic USB 3.0 Bridge._
 4. Connect the power supply cord to the write blocker, then plug it into an outlet. Confirm that the **DC IN** light turns green.
 5. Turn on the write blocker by pressing the power button once. The **Power**, **Host**, **Device**, and **Write Block** lights should turn green and the write blocker screen should indicate that it recognizes the device. The Activity light may blink red, which is OK.
 
-   ![Example of write blocker set up with Device Recognized feedback on screen.](../workflow-images/write_blocker_setup.jpg)
+   <img src="../workflow-images/write_blocker_setup.jpg" alt="Example of write blocker set up with Device Recognized feedback on screen." width="650">
 7. Continue to **Virus Scan**.
   
 ## 🦠 Virus Scan
