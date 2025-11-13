@@ -6,7 +6,9 @@ _Last updated on November 13, 2025_
 
 _These instructions are adapted for the Windows machine (Yoda) in the Digital Preservation Lab._
 
-1. Disconnect from the network - _this is a precaution in case we detect any viruses!_ On the back of the machine, **unplug** both the **black** and **gray** cable. The black cable in the top port connects to the NAS, and the gray cable in the bottom port connects to Network 0.
+1. Disconnect from the network - _this is a precaution in case we detect any viruses!_ On the back of the machine, **unplug** both the **black** and **gray** cables in the 1G and 10G slots, respectively.
+
+   The black cable in the 1G port connects to the NAS, and the gray cable in the 10G port connects to Network 0.
 
    ![Network cables on the back of Yoda shown plugged in.](../workflow-images/network_cables.jpeg)
    
