@@ -74,6 +74,8 @@ _These instructions are adapted for the Windows machine (Yoda) in the Digital Pr
 
     ```
     npm install
+    ```
+    ```
     npx cross-env DEBUG=Metadata_Form:* npm start
     ```
     **💡 Command Breakdown**
