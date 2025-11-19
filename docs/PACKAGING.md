@@ -106,7 +106,7 @@ _These instructions are adapted for the Windows machine (Yoda) in the Digital Pr
    
 4. Follow the input prompts in the terminal by clicking and dragging each file path then pressing **Enter**. After being prompted for the top-level barcode directory, _make sure File Explorer is closed before pressing **Enter**!!!_ Otherwise, you’ll get a File Permission error.
 
-   Here's an example of the terminal prompts and output:
+   Here's a more specific example of the terminal prompts and output:
     ```
     Enter path to the metadata text file you just generated: c:\Users\lstuch1\Desktop\39015092248429\transfer_metadata\metadata.txt
     
