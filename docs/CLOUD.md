@@ -9,12 +9,12 @@ _These instructions are adapted for the Windows machine (Yoda) in the Digital Pr
 1. For each transfer, create an empty folder and name it the corresponding barcode. Note that for cloud files, we assign a barcode but toss the sticker afterwards to prevent reuse.
 
 6. Within the top-level barcode folder, create two additional folders called **carved_files** and **transfer_metadata**.
-   
-   ![Example of carved_files and transfer_metadata folders created in File Explorer.](https://github.com/user-attachments/assets/52b9f6f8-6405-4f2d-935d-b1e58a4ccff2)
+
+   <img src="../workflow-images/prepared_directory.jpeg" alt="Example of carved_files and transfer_metadata folders created in File Explorer." width="500">
   
 8. Continue to **Rclone File Transfer**.
 
-## 🔁 Rclone File Transfer
+## 🦠 Rclone Mount and Virus Scan
 
 _Rclone is a command-line tool for managing files on cloud storage services like Google Drive and Dropbox. First, you may need to configure your Google or Dropbox drive to access the shared files you would like to download, instructions for each are linked below._
 
@@ -23,9 +23,35 @@ _Rclone is a command-line tool for managing files on cloud storage services like
 
 _These instructions are adapted for the Windows machine (Yoda) in the Digital Preservation Lab._
 
+1. In a terminal, locate the **rclone** folder on the Desktop of Yoda and `cd` into it.
+2. Once you are in **rclone**, enter:
+
+    ```
+    rclone mount [drive name]:"[folder name]" Z: --read-only
+    ```
+    **💡 Command Breakdown**
+    + `rclone mount` mounts a drive to a local computer
+    + `[drive name]:"[folder name]"` is the name of the folder containing the files
+    + `Z:` is the local drive we want to mount the files to
+    + `--read-only` ensures that we can't accidentally overwrite or delete the files
+
+    Here's a more specific example:
+    
+    ```
+    rclone mount abbysyp:"Wang Mei wu dao zuo pin xuan ji" Z: --read-only
+    ```
+   Once the command has run, you should be able to access the folder through Windows File Explorer.
+
+   <img src="../workflow-images/rclone_mount.png" alt="Example of the Wang folder mounted to the Z drive in File Explorer." width="500">
+
+
+## 🔁 Rclone File Transfer
+
+_These instructions are adapted for the Windows machine (Yoda) in the Digital Preservation Lab._
+
 1. First, navigate to the folder you would like to download in Google Drive or Dropbox and **copy** the name to your clipboard.
 
-   ![Example of Google Drive folder pulled up with the folder name displayed at the top of the page.](../workflow-images/google_drive_folder.png)
+   <img src="../workflow-images/google_drive_folder.png" alt="Example of Google Drive folder pulled up with the folder name displayed at the top of the page." width="500">
 
 3. In a terminal, locate the **rclone** folder on the Desktop of Yoda and `cd` into it.
 4. Once you are in **rclone**, enter:
