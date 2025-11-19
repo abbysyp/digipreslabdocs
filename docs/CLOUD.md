@@ -12,7 +12,7 @@ _These instructions are adapted for the Windows machine (Yoda) in the Digital Pr
 
    <img src="../workflow-images/prepared_directory.jpeg" alt="Example of carved_files and transfer_metadata folders created in File Explorer." width="500">
   
-8. Continue to **Rclone File Transfer**.
+8. Continue to **Rclone Mount and Virus Scan**.
 
 ## 🦠 Rclone Mount and Virus Scan
 
@@ -44,6 +44,9 @@ _These instructions are adapted for the Windows machine (Yoda) in the Digital Pr
 
    <img src="../workflow-images/rclone_mount.png" alt="Example of the Wang folder mounted to the Z drive in File Explorer." width="500">
 
+3. Follow the steps to run a [Virus Scan](https://github.com/abbysyp/digipreslabdocs/blob/main/docs/VIRUS-SCAN.md#virus-scan) on that directory.
+   
+5. Continue to **Rclone File Transfer**.
 
 ## 🔁 Rclone File Transfer
 
@@ -53,7 +56,7 @@ _These instructions are adapted for the Windows machine (Yoda) in the Digital Pr
 
    <img src="../workflow-images/google_drive_folder.png" alt="Example of Google Drive folder pulled up with the folder name displayed at the top of the page." width="500">
 
-3. In a terminal, locate the **rclone** folder on the Desktop of Yoda and `cd` into it.
+3. In the terminal, double check that you are still in the **rclone** folder.
 4. Once you are in **rclone**, enter:
 
     ```
