@@ -145,7 +145,7 @@ _Great job, you're almost at the finish line!_
    
 7. On the **Start transfer button**, select **“Start with ‘basic’ configuration”** and Archivematica will start processing the bag.
 
-   <img src="../workflow-images/am_config.png" alt="Start transfer button with "basic" configuration option highlighted in Archivematica." width="500">
+   <img src="../workflow-images/am_config.png" alt="Start transfer button with basic configuration option highlighted in Archivematica." width="500">
    
 9. You can track Archivematica’s progress by scrolling down:
 
