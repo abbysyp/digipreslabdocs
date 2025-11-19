@@ -108,17 +108,17 @@ _These instructions are adapted for the Windows machine (Yoda) in the Digital Pr
 
    Here's an example of the terminal prompts and output:
     ```
-    Enter path to the metadata text file you just generated: c:\Users\lstuch1\Desktop\barcode\transfer_metadata\metadata.txt
+    Enter path to the metadata text file you just generated: c:\Users\lstuch1\Desktop\39015092248429\transfer_metadata\metadata.txt
     
-    Enter path to the top-level barcode directory: c:\Users\lstuch1\Desktop\barcode
+    Enter path to the top-level barcode directory: c:\Users\lstuch1\Desktop\39015092248429
     
     yay! bag is valid
     
-    Enter path to the checksums.csv file that FTK generated: c:\Users\lstuch1\Desktop\barcode\data\transfer_metadata\checksums.csv
+    Enter path to the checksums.csv file that FTK generated: c:\Users\lstuch1\Desktop\39015092248429\data\transfer_metadata\checksums.csv
     
-    Enter path to the manifest-md5.txt file that bagit generated: c:\Users\lstuch1\Desktop\barcode\manifest-md5.txt
+    Enter path to the manifest-md5.txt file that bagit generated: c:\Users\lstuch1\Desktop\39015092248429\manifest-md5.txt
     
-    Enter path where you want failed_checksums.txt file to go: c:\Users\lstuch1\Desktop\barcode\data\transfer_metadata
+    Enter path where you want failed_checksums.txt file to go: c:\Users\lstuch1\Desktop\39015092248429\data\transfer_metadata
     
     finished! validated 27 files
     ```
@@ -127,6 +127,7 @@ _These instructions are adapted for the Windows machine (Yoda) in the Digital Pr
    * Floppy Disk
    * [USB or Hard Drive](https://github.com/abbysyp/digipreslabdocs/blob/main/docs/USB.md#usb-or-external-hard-drive)
    * [Cloud](https://github.com/abbysyp/digipreslabdocs/blob/main/docs/CLOUD.md#cloud-google-drive-or-dropbox)
+     
 7. Otherwise, continue to **Transfer to Archivematica**.
 
 ## 🏁 Transfer to Archivematica
@@ -134,12 +135,14 @@ _These instructions are adapted for the Windows machine (Yoda) in the Digital Pr
 _Great job, you're almost at the finish line!_
 
 1. Navigate to **ulib-darkblue-staging** in File Explorer and add your bag to **lab → production**.
-2. Launch **archivematica-lab** in a browser window and make sure you’re in the **Transfer tab**.
+   
+3. Launch **archivematica-lab** in a browser window and make sure you’re in the **Transfer tab**.
 
    <img src="../workflow-images/am_transfer_tab.png" alt="Transfer tab highlighted in Archivematica." width="500">
    
 4. Select **Unzipped bag** from the dropdown menu and enter **barcode** as the **Transfer name**.
-5. Select **Browse** and find the bag you want to transfer. Click on it once, then select the blue **Add** button.
+   
+6. Select **Browse** and find the bag you want to transfer. Click on it once, then select the blue **Add** button.
 
    <img src="../workflow-images/am_select_bag.png" alt="Example of finding a bag in darkblue-staging for an Archivematica transfer." width="500">
    
