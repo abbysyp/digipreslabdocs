@@ -18,9 +18,7 @@ _These instructions are adapted for the Windows machine (Yoda) in the Digital Pr
 
 _These instructions are adapted for the Windows machine (Yoda) in the Digital Preservation Lab._
 
-_For 3.5” Apple and 5.25” floppies, we must extract an image from the disk using specialized equipment in the lab. For standard 3.5” floppies, we’re able to grab the carved files right off of the disk using FTK. This workflow covers all methods, so first identify the type of floppy disk you’re working with then follow the instructions accordingly._
-
-### 🍎 3.5" Apple Floppy
+### KryoFlux
 
 1. Connect KryoFlux via USB without connecting to external power supply.
 2. Open the folder **kryoflux_3.00_windows** on Desktop and find the **dtc** folder.
@@ -67,5 +65,54 @@ _For 3.5” Apple and 5.25” floppies, we must extract an image from the disk u
 13. Remove the media and disconnect the hardware first from the power strip, then the computer.
 14. Your disk image and log file can now be found in your **image** folder.
 15. Continue to **Logical Transfer of Files**.
+
+### FC5025
+
+1. Configure external setup for FC5025.
+   
+3. On the desktop, open **Disk Image and Browse**.
+4. Select **Disk Type**, typically **MS-DOS 360k**.
+5. Drag the image folder path into **Image Output Directory** box.
+6. Enter the barcode in the **Output Image Filename** box.
+7. Select **Capture Disk Image File**.
+8. Select **Done** and check that the image is there. It may say **Bummer!** instead of **Done**. Click on the prompt and check the image folder anyways...sometimes it still works.
+9. If it continues to fail, try using [KryoFlux](https://github.com/abbysyp/digipreslabdocs/edit/main/docs/FLOPPY.md#kryoflux) with the 5.25” drive.
+10. Continue to **Logical Transfer of Files**.
+
+### Floppy Reader
+
+1. Connect disk reader via USB to the computer.
+   
+3. Insert disk into reader.
+4. Continue to **Logical Transfer of Files**.
+
+## 🔁 Logical Transfer of Files
+
+1. From the desktop open **AccessData FTK Imager**.
+2. Select **File → Add Evidence Item**.
+3. Next, choose one of two options:
+   
+     + _If you already extracted a disk image using KryoFlux or FTK_, select **Image File** then **barcode → image → image file (.E01)** as the Source Path
+       
+     + _If you are extracting files from a 3.5” floppy via USB reader_, select **Logical Drive > A:\\** then click **Finish**
+       
+4. Under **Evidence Tree**, click on **+** to expand the directories until you see **[root]** or **[HTE]** and click on it.
+5. In the **File List** panel, select everything using **Ctrl+click**.
+6. Once all the files are highlighted, **right-click** and select **Export Files**.
+7. Select **barcode → carved_files** as the destination folder then click **OK**.
+8. **Right-click** the highlighted files again in FTK and select **Export File Hash List**.
+9. This time, select **barcode → transfer_metadata** as the destination folder. Enter filename as **checksums** then click **OK**.
+
+    Note: Essentially, we are asking FTK to generate a csv of MD5 and SHA1 checksums for each of the carved files as early as possible. We will use this later to double-check that the files haven’t changed
+
+10. Double check that both the carved files and checksums.csv are there:
+   
+     + _If it was a clean transfer_, you may now delete the image and image folder
+       
+     + _Otherwise_, please talk to your supervisor so that a decision can be made about whether or not to retain the disk image
+
+15. Continue to [Packaging and Transfer Workflow](https://github.com/abbysyp/digipreslabdocs/blob/main/docs/PACKAGING.md#packaging-and-transferring-files-to-archivematica).
+   
+
 
    
