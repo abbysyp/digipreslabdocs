@@ -82,7 +82,7 @@ I am working with a...
    
 16. Remove the media and disconnect the hardware first from the power strip, then the computer.
 17. Your disk image and log file can now be found in your **image** folder.
-18. Continue to [**Logical Transfer of Files**](https://github.com/abbysyp/digipreslabdocs/edit/main/docs/FLOPPY.md#-logical-transfer-of-files)..
+18. Continue to [**Logical Transfer of Files**](https://github.com/abbysyp/digipreslabdocs/edit/main/docs/FLOPPY.md#-logical-transfer-of-files).
 
 ### FC5025
 
