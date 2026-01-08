@@ -6,7 +6,7 @@ _Last updated on January 2, 2026_
 
 _These instructions are adapted for the Windows machine (Yoda) in the Digital Preservation Lab._
    
-1. For each physical disk, create an empty folder and name it the corresponding barcode.
+1. For each physical disk, create an empty folder and name it the corresponding **barcode**.
 
 6. Within the top-level barcode folder, create two additional folders called **carved_files** and **transfer_metadata**. If you are working with an Apple 3.5" or 5.25" floppy, create an additional folder called **image**.
 
@@ -84,32 +84,45 @@ _These instructions are adapted for the Windows machine (Yoda) in the Digital Pr
 1. Connect disk reader via USB to the computer.
    
 3. Insert disk into reader.
-4. Continue to **Logical Transfer of Files**.
+
+   <img src="../workflow-images/usb_floppy_reader_setup.jpg" alt="USB floppy reader setup." width="500">
+
+5. Continue to **Logical Transfer of Files**.
 
 ## 🔁 Logical Transfer of Files
 
 1. From the desktop open **AccessData FTK Imager**.
 2. Select **File → Add Evidence Item**.
-3. Next, choose one of two options:
+
+   <img src="../workflow-images/ftk_add_evidence_item.png" alt="Add Evidence Item option highlighted in FTK." width="500">
+
+4. Next, choose one of two options:
    
      + _If you already extracted a disk image using KryoFlux or FTK_, select **Image File** then **barcode → image → image file (.E01)** as the Source Path
        
-     + _If you are extracting files from a 3.5” floppy via USB reader_, select **Logical Drive > A:\\** then click **Finish**
+     + _If you are extracting files via USB reader_, select **Logical Drive > A:\\** then click **Finish**
        
-4. Under **Evidence Tree**, click on **+** to expand the directories until you see **[root]** or **[HTE]** and click on it.
-5. In the **File List** panel, select everything using **Ctrl+click**.
-6. Once all the files are highlighted, **right-click** and select **Export Files**.
-7. Select **barcode → carved_files** as the destination folder then click **OK**.
-8. **Right-click** the highlighted files again in FTK and select **Export File Hash List**.
-9. This time, select **barcode → transfer_metadata** as the destination folder. Enter filename as **checksums** then click **OK**.
+5. Under **Evidence Tree**, click on **+** to expand the directories until you see **[root]** or **[HTE]** and click on it.
 
-    Note: Essentially, we are asking FTK to generate a csv of MD5 and SHA1 checksums for each of the carved files as early as possible. We will use this later to double-check that the files haven’t changed
-
-10. Double check that both the carved files and checksums.csv are there:
+   <img src="../workflow-images/ftk_expanded_evidence_tree.png" alt="FTK expanded evidence tree." width="500">
    
-     + _If it was a clean transfer_, you may now delete the image and image folder
+7. In the **File List** panel, select everything using **Ctrl+click**.
+8. Once all the files are highlighted, **right-click** and select **Export Files**.
+
+   <img src="../workflow-images/ftk_export_files.png" alt="FTK Export Files option highlighted." width="500">
+   
+10. Select **barcode → carved_files** as the destination folder then click **OK**.
+11. **Right-click** the highlighted files again in FTK and select **Export File Hash List**.
+    
+13. This time, select **barcode → transfer_metadata** as the destination folder. Enter filename as **checksums** then click **OK**.
+
+    Essentially, we are asking FTK to generate a csv of MD5 and SHA1 checksums for each of the carved files as early as possible. We will use this later to double-check that the files haven’t changed.
+
+14. Double check that both the **carved files** and **checksums.csv** are there:
+   
+     + _If it was a clean transfer_, you may now delete the image and image folder.
        
-     + _Otherwise_, please talk to your supervisor so that a decision can be made about whether or not to retain the disk image
+     + _Otherwise_, please talk to your supervisor so that a decision can be made about whether or not to retain the disk image.
 
 15. Continue to [Packaging and Transfer Workflow](https://github.com/abbysyp/digipreslabdocs/blob/main/docs/PACKAGING.md#packaging-and-transferring-files-to-archivematica).
    
