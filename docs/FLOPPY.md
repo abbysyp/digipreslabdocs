@@ -1,6 +1,6 @@
 # Floppy Disk
 
-_Last updated on January 2, 2026_
+_Last updated on January 8, 2026_
 
 ## 📁 Prepare Media Directory
 
@@ -16,7 +16,17 @@ _These instructions are adapted for the Windows machine (Yoda) in the Digital Pr
 
 ## 💾 Getting Carved Files
 
-_These instructions are adapted for the Windows machine (Yoda) in the Digital Preservation Lab._
+For 3.5” Apple and 5.25” floppies, we must extract an image from the disk using specialized equipment in the lab. For standard 3.5” floppies, we’re able to grab the carved files right off of the disk using FTK.
+
+This workflow covers all methods, so first identify the type of floppy disk you’re working with then follow the instructions accordingly.
+
+<img src="../workflow-images/floppy_diagram.png" alt="Diagram of IBM 3.5 inch versus Apple 3.5 inch floppy disk. Both have write-protect on. The Apple floppy does not have an extra hole in the top-right corner." width="500">
+
+I am working with a...
+
+   + [3.5" IBM](https://github.com/abbysyp/digipreslabdocs/edit/main/docs/FLOPPY.md#floppy-reader)
+   + [3.5" Apple](https://github.com/abbysyp/digipreslabdocs/edit/main/docs/FLOPPY.md#kryoflux)
+   + [5.25"](https://github.com/abbysyp/digipreslabdocs/edit/main/docs/FLOPPY.md#fc5025)
 
 ### KryoFlux
 
@@ -48,10 +58,18 @@ _These instructions are adapted for the Windows machine (Yoda) in the Digital Pr
 
 7. In File Explorer, open the application **kryoflux-ui.jar** located in the **dtc** folder.
 8. Navigate to **File → Settings → Output Tab** and change the output file path to the corresponding disk image folder.
-9. Insert floppy disk into the reader.
+9. Insert floppy into the reader.
 10. On the toolbar, locate the Drive tab and make sure **Drive 0** is selected.
-11. Under the Control bar, enter the barcode as the image name, then select the type of disk you want to read. In most cases, it’s **Apple DOS 400K/800K sector image**.
-12. Press **Start** and wait for the image to be made.
+
+    <img src="../workflow-images/kryoflux_drive_0.png" alt="Drive 0 under Drive tab view selected in KryoFlux." width="350">
+   
+12. Under the Control bar, enter the barcode as the image name, then select the type of disk you want to read. In most cases, it’s **Apple DOS 400K/800K sector image**.
+
+     <img src="../workflow-images/kryoflux_control_bar.png" alt="Control bar view with barcode entered and disk image type selected in KryoFlux." width="500">
+    
+14. Press **Start** and wait for the image to be made.
+
+    <img src="../workflow-images/kryoflux_results.png" alt="View of grid feedback while image is being made in KryoFlux." width="500">
 
     There are two grids that will fill up with color indicators, each grid represents a side of the disk (sometimes your disk may be only one-sided, so one grid will be empty), and each square in the grid represents a sector of the disk.
 
@@ -62,22 +80,33 @@ _These instructions are adapted for the Windows machine (Yoda) in the Digital Pr
       + Yellow = notifications and warnings, e.g. additional header data
       + Glowing = track is being dumped
    
-13. Remove the media and disconnect the hardware first from the power strip, then the computer.
-14. Your disk image and log file can now be found in your **image** folder.
-15. Continue to **Logical Transfer of Files**.
+16. Remove the media and disconnect the hardware first from the power strip, then the computer.
+17. Your disk image and log file can now be found in your **image** folder.
+18. Continue to [**Logical Transfer of Files**](https://github.com/abbysyp/digipreslabdocs/edit/main/docs/FLOPPY.md#-logical-transfer-of-files)..
 
 ### FC5025
 
 1. Configure external setup for FC5025.
+
+   <img src="../workflow-images/fc5025_setup.png" alt="Diagram of R2D2 setup with Ribbon Cable, FC5025 (R2D2), Molex Cable, and 5.25in Floppy Disk Reader labeled." width="500">
    
 3. On the desktop, open **Disk Image and Browse**.
 4. Select **Disk Type**, typically **MS-DOS 360k**.
-5. Drag the image folder path into **Image Output Directory** box.
-6. Enter the barcode in the **Output Image Filename** box.
-7. Select **Capture Disk Image File**.
-8. Select **Done** and check that the image is there. It may say **Bummer!** instead of **Done**. Click on the prompt and check the image folder anyways...sometimes it still works.
-9. If it continues to fail, try using [KryoFlux](https://github.com/abbysyp/digipreslabdocs/edit/main/docs/FLOPPY.md#kryoflux) with the 5.25” drive.
-10. Continue to **Logical Transfer of Files**.
+
+   <img src="../workflow-images/disk_image_browse_disk_type.png" alt="MS-DOS 1200k selected for Disk Type in Disk Image and Browse." width="500">
+   
+6. Drag the image folder path into **Image Output Directory** box.
+7. Enter the barcode in the **Output Image Filename** box.
+8. Select **Capture Disk Image File**.
+
+   <img src="../workflow-images/disk_image_browse_capture.png" alt="Example of Output Image Directory and Output Image Filename populated in Disk Image and Browse, with Capture Disk Image File button shown below." width="500">
+   
+10. Select **Done** and check that the image is there. It may say **Bummer!** instead of **Done**. Click on the prompt and check the image folder anyways...sometimes it still works.
+
+    <img src="../workflow-images/disk_image_browse_success.png" alt="Example of Done (successful) results shown in Disk Image and Browse." width="500">
+    
+    If it continues to fail, try using [KryoFlux](https://github.com/abbysyp/digipreslabdocs/edit/main/docs/FLOPPY.md#kryoflux) with the 5.25” drive.
+13. Continue to [**Logical Transfer of Files**](https://github.com/abbysyp/digipreslabdocs/edit/main/docs/FLOPPY.md#-logical-transfer-of-files).
 
 ### Floppy Reader
 
@@ -87,7 +116,7 @@ _These instructions are adapted for the Windows machine (Yoda) in the Digital Pr
 
    <img src="../workflow-images/usb_floppy_reader_setup.jpg" alt="USB floppy reader setup." width="500">
 
-5. Continue to **Logical Transfer of Files**.
+5. Continue to [**Logical Transfer of Files**](https://github.com/abbysyp/digipreslabdocs/edit/main/docs/FLOPPY.md#-logical-transfer-of-files).
 
 ## 🔁 Logical Transfer of Files
 
