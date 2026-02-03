@@ -1,21 +1,19 @@
 # U-M Digital Preservation Laboratory Workflows
 
-Establishing workflows for transferring material from obsolete media or the cloud represent a core function of our work. Workflows for working with media such as floppy disks and optical discs like CD-ROMs are included here for your use and adaptation. These include steps to create forensic images or file transfers that maintain the bit integrity of the material. The resulting packages constitute "Submission Information Packages," ready for deposit in the library's preservation systems.
+The workflows on this page include steps to create forensic images or file transfers for media such as floppy disks, external drives, and cloud storage. Here, you can also find some of our in-house scripts used to store preservation metadata, maintain the bit-level integrity of the material, and “bag” preservation packages according to the BagIt standard. The resulting packages constitute "Submission Information Packages," ready for deposit in the library's preservation systems.
 
-## Working with students
+## Quick links
 
-Our lab is a space for both teaching and production, and provides a place for students to gain experience in digital preservation practice. Our workflows are designed and maintained through the research and testing of graduate student employees, and can accommodate production-level outputs with the assumption that graduate employees and interns will handle a fair amount of the work.
+  + [Floppy Disk Imaging](https://github.com/abbysyp/digipreslabdocs/blob/7a2a2c435bbd2b43bfaf35a1ceb22346348b9765/docs/FLOPPY.md)
+  + [USB or Hard Drive Transfers](https://github.com/abbysyp/digipreslabdocs/blob/7a2a2c435bbd2b43bfaf35a1ceb22346348b9765/docs/USB.md)
+  + [Cloud Transfers](https://github.com/abbysyp/digipreslabdocs/blob/7a2a2c435bbd2b43bfaf35a1ceb22346348b9765/docs/CLOUD.md)
 
-## Software and tools used in the workflows include:
+## Software
 
-Software and tools used in the workflows include:
-
-  + Forensic Toolkit (FTK) Imager
-  + Brunnhilde on Windows
-  + Software included with Device Side Data’s FC5025
-
-Additional tools will be implemented as we extend our workflows to include archival processing and additional preservation actions, such as file normalization.
+Many of the tools we use are open source and developed within both archivist and non-archivist communities. Our workflows are reliable for as long as these softwares are being supported, which means we often research, test, and embed new tools as needed.
 
 ## Disclaimer
 
-These workflows are shared as-is and may include some internal terminology. Feel free to contact us at digitalpreservation@umich.edu for clarifications or questions. Also, we are still learning the intricacies of preserving this type of content, and workflows will likely change as we adjust our methods.
+These workflows are shared as-is and may include some internal terminology. Many steps also include entering terminal commands or navigating clunky softwares, so we try our best to break down the how and why behind what we’re doing to accommodate varying levels of comfort with technology.
+
+Feel free to contact us at digitalpreservation@umich.edu for any questions, clarifications, or feedback!
